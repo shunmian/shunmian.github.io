@@ -1,0 +1,49 @@
+paginate: 10 # pagination based on number of posts
+paginate_path: "page:num"
+plugins_dir: 
+- jekyll-paginate
+- jekyll-feed
+- jekyll-paginate
+
+
+exclude: ["README.md"] # files to exclude
+
+
+markdown: kramdown
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  # coderay:
+  #   coderay_wrap:              div
+  #   coderay_line_numbers:      inline
+  #   coderay_line_number_start: 1
+  #   coderay_tab_width:         4
+  #   coderay_bold_every:        10
+  #   coderay_css:               style
+
+
+destination: _site/
+highlighter: rouge
+safe: false
+
+title: SHUNMIAN
+description: Stylish Jekyll Theme
+disqus: shunmianjohnson # add disqus short name here
+author:
+  name: Shunmian
+  email: shunmian@gmail.com
+  github: shunmian
+  twitter: Wanderl29817400
+  bio: The only programmers in a position to see all the differences in power between the various languages are those who understand the most powerful one.
+  email_md5: 02eefecba7f0b21939d12a37f94bf5df
+
+feed:
+  path: feed.xml
+categories_path: categories.html
+tags_path: tags.html
+
+baseurl: http://www.shunmian.me

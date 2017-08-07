@@ -1,0 +1,79 @@
+
+<!--sidebar.html-->
+        <header class="sidebar_header " role="banner">
+            <a href="{{site.baseurl}}/index.html">
+                <img src = "https://www.gravatar.com/avatar/{{site.author.email_md5}}?s=150" class="img-circle img-responsive center-block sidebar_logo sidebar_img" />
+            </a>
+
+
+            <h3 class="title text-center">
+                <a href="{{site.baseurl}}/index.html">{{site.title}}</a>
+            </h3>
+
+        </header>
+
+
+        <hr class="hr_short"/>
+        <div id = "bio" class="text-center sidebar_bio">
+            {% if site.author.bio%}
+
+                <p>嗨，欢迎来到我的博客。<br/>
+                我是Shunmian，一名iOS开发者。<br/>
+                <hr class = "hr_short_low">
+                正在学习Algorithm，Functional Programming和Machine Learning，在学习和模仿中寻找自己。 
+
+                </p>
+
+            {% endif %}
+        </div>
+
+
+        <hr class="hr_middle"/>
+        <div id = "contact-list" class="text-center">
+            <ul class="list-unstyled list-inline">
+                <li>
+                    {% if site.author.email %}
+                    <a class="btn btn_info_outline" href="mailto:{{site.author.email}}"><i class="fa fa-envelope fa-lg"></i></a>
+                    {% endif %}
+                </li>
+
+                <li>
+                    {% if site.author.github %}
+                    <a class="btn btn_info_outline" href="https://github.com/{{site.author.github}}"><i class="fa fa-github fa-lg"></i></a>
+                    {% endif %}
+                </li>
+
+                <li>
+                    {% if site.author.twitter %}
+                    <a class="btn btn_info_outline" href="https://github.com/{{site.author.github}}"><i class="fa fa-twitter fa-lg"></i></a>
+                    {% endif %}
+                </li>
+
+                <li>
+                    <a class="btn btn_info_outline" href="{{site.baseurl}}/feed.xml"><i class="fa fa-rss fa-lg"></i></a>
+                </li>
+        </div>
+
+
+        <hr class="hr_short"/>
+        <div id = "contact-list" class="text-center">
+            <ul class="unstyled-list list-inline">
+                <li>
+                    <a class="btn btn_info_outline btn-sm" href="{{site.baseurl}}/index.html"><i class="fa fa-home fa-md"></i> 主页</a>
+                </li>
+
+                <li>
+                    <a class="btn btn_info_outline btn-sm" href="{{site.baseurl}}/tags.html"><i class="fa fa-tags fa-md"></i> 标签</a>
+                </li>
+
+                <li>
+                    <a class="btn btn_info_outline btn-sm" href="{{site.baseurl}}/categories.html"><i class="fa fa-list fa-md"></i> 分类</a>
+                </li>
+            </ul>
+        </div>
+        <div class="padding_bottom_500"></div>
+
+
+
+
+<!--sidebar.html end-->

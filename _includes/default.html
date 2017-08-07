@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/posts/favico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/images/posts/favico/favico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/posts/favico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/posts/favico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/posts/favico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/posts/favico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/posts/favico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/posts/favico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/posts/favico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/assets/images/posts/favico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/posts/favico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/posts/favico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/posts/favico/favicon-16x16.png">
+    <link rel="manifest" href="/assets/images/posts/favico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/assets/images/posts/favico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">   
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/font-awesome/css/font-awesome.min.css">
+    <link href="/assets/css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/syntax.css">
+
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
+<!--     <script type="text/javascript" src="http://api.youziku.com/webfont/FastJS/yzk_976E121ED7CC0870"></script> -->
+
+    <title>{{site.title}}</title>
+</head>
+
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 sidebar hidden-xs sidebar">
+                {% include sidebar.html%}
+            </div>
+
+            <div class="col-sm-9 col-sm-offset-3">
+                {{content}}
+                <div class="footer">
+                    <footer>
+                        <hr />
+                        <p> &copy: 2015 {{site.author.name}} with jekyll. Theme: <a href="https://github.com/dbtek/dbyll"dbyll</a> by dbtek.
+                        </p>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="/assets/js/jquery-2.2.0.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+    }
+  });
+</script>
+
+    <script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+    <script type="text/javascript">
+
+$youziku.load(".sidebar_bio", "bdcc72b8235345649b02c123dac5610b", "SiYuan-ExtraLight");
+
+
+   $youziku.draw();
+</script>
+
+</body>
+
+</html>
