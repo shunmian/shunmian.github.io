@@ -46,4 +46,4 @@ feed:
 categories_path: categories.html
 tags_path: tags.html
 
-baseurl: http://www.shunmian.me
+baseurl: https://shunmian.github.io
